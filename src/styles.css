@@ -1,0 +1,279 @@
+.text-updater-node {
+    height: 110px;
+    width: 130px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 5px;
+    background: white;
+    position: relative;
+    display: flex;
+    
+    
+
+  }
+  
+  .text-updater-node label {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+  }
+
+  #text{
+      font-size: 10px;
+      border-radius: 0px;
+      border: 1px solid rgb(3, 3, 3);
+      border-top: 0mm;
+      border-left: 0mm;
+      border-right: 0mm;
+      border-bottom: 0mm;
+      text-align: center;
+      
+  }
+
+  .resize {
+      position: relative;
+      border: 2px solid #000000;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 170;
+      min-height: 140;
+      width: 200px;
+      height: 200px;
+      fill: none;
+     
+      
+
+  }
+
+  .resize-circle {
+    position: relative;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 170;
+    min-height: 140;
+    width: 200px;
+    height: 200px;
+    fill: none;
+    
+
+}
+
+  #heading{
+    font-size: 10px;
+    border-radius: 0px;
+    border: 1px solid rgb(180, 180, 180);
+    border-top: 0mm;
+    border-left: 0mm;
+    border-right: 0mm;
+    
+
+  }
+
+
+  #del{
+      border-radius: 50%;
+      height: 10px;
+      width: 10px;
+      left: 5px;
+      bottom: 3px;
+      top: 10px;
+      
+  }
+
+  .resizer-r {
+      cursor: col-resize;
+      height: 100%;
+      right: 0;
+      top: 0;
+      width: 5px;
+      color: #000;
+      position: absolute;
+
+  }
+
+  .resizer-t {
+    cursor: row-resize;
+    height: 5px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: #000;
+    position: absolute;
+
+}
+
+.resizer-b {
+    cursor: row-resize;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #000;
+    position: absolute;
+
+}
+
+.resizer-l {
+    cursor: col-resize;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 5px;
+    color: #000;
+    position: absolute;
+
+}
+
+#subflow{
+  border: 2px solid;
+  padding: 20px;
+  width: 100px;
+  resize:both;
+  overflow: auto;
+  height: 100px;
+}
+
+.edgebutton {
+    width: 20px;
+    height: 20px;
+    background: #eee;
+    border: 1px solid #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 1;
+  }
+  
+  .edgebutton:hover {
+    box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.08);
+  }
+  
+  .edgebutton-foreignobject body {
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+  }
+
+
+  .profile-pic {
+      height: 40px;
+      width:40px;
+      border-radius: 90%;
+      overflow: hidden;
+      border: 3px solid rgb(0, 0, 0);    
+      
+  }
+
+
+   .photo{
+      height: 100%;
+      width: 100%;
+  }
+
+ 
+
+  .upldbtn{
+      position: absolute;
+      bottom: 50px;
+      left: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      display: none;     
+
+  }
+
+  .pimg:hover + .upldbtn {
+    display: block;
+    color: #000;
+}
+
+#sbfhover{
+  justify-content: auto;
+  align-items: auto;
+  justify-items: auto;
+}
+
+#sbf{
+  position: relative;
+  bottom: 80px;
+  right: 80px;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  align-content: center;
+  border-radius: 20%;
+  
+}
+
+
+  .dndflow {
+    flex-direction: column;
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+  }
+  
+  .dndflow aside {
+    background: #fcfcfc;
+    height: 50px;
+  }
+  
+  
+  .dndflow .dndnode {
+    height: 20px;
+    padding: 4px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+  }
+  
+  .dndflow .dndnode.input {
+    background-color: rgb(150, 184, 241);
+  
+  }
+
+  .dndflow .dndnode.default {
+    background-color: rgba(125, 210, 211,0.9);
+
+  }
+  
+  .dndflow .dndnode.output {
+    background-color: rgba(236, 154, 182,0.9);
+
+  }
+
+  .dndflow .reactflow-wrapper {
+    flex-grow: 1;
+    height: 100%;
+  }
+  
+  .dndflow .selectall {
+    margin-top: 10px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .dndflow {
+      flex-direction: row;
+    }
+  
+    .dndflow aside {
+      width: 20%;
+      max-width: 250px;
+    }
+  }
+  
